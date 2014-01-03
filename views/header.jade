@@ -1,0 +1,73 @@
+doctype 5
+html
+	head
+		title #{companyname}
+		//bootsharp
+		link(rel="stylesheet",href="/stylesheets/style.css")
+		script(type="text/javascript",src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js")
+		script(type="text/javascript",src="/javascripts/lib.js");
+		//百度推广按键
+		script(type="text/javascript",data="type=slide&amp;img=4&amp;pos=right&amp;uid=0")#bdshare_js
+		script(type="text/javascript")#bdshell_js
+		script(type="text/javascript").
+			document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+			//mmLoadMenus();
+	body
+		//qq飘浮
+		div#floaterqq
+			img(src='/images/qq.jpg',width='45',height='141',border='0',usemap='#MAPQQ')
+			map(name="MAPQQ")
+				area(shape='rect',coords="7,43,39,84",href="http://wpa.qq.com/msgrd?v=3&uin=379192283&site=qq&menu=yes")
+				area(shape='rect',coords="7,94,39,134",href="http://wpa.qq.com/msgrd?v=3&uin=491789847&site=qq&menu=yes")
+		map(name="MAPTITLE")
+			//设为主页
+			area(shape="rect",coords="790,14,847,43",href="#",onclick="SetHome(this,'www.shuangteng.net');")
+			//添加到收藏夹
+			area(shape="rect",coords="870,14,940,43",href="#",onclick="AddFavorite('双滕科技,'www.shuangteng.net');")
+		div(width='1002').container
+			div.row(align='center')
+				div.span12
+					//店横福
+					img(alt="1002x76",src="/images/top.jpg",usemap="#MAPTITLE").img-rounded
+					ul.nav.nav-tabs
+						if tag=='index'
+							li.active
+								a(href="/") 网站首页
+						else
+							li
+								a(href="/") 网站首页
+						if tag=='product'
+							li.active
+								a(href="/product") 产品中心
+						else
+							li
+								a(href="/product") 产品中心
+						if tag=='cases'
+							li.active
+								a(href="/cases") 成功案例
+						else
+							li
+								a(href="/cases") 成功案例
+						if tag=='about'
+							li.active
+								a(href="/about") 关于我们
+						else
+							li
+								a(href="/about") 关于我们
+						if tag=='response'
+							li.active
+								a(href="/response") 在线反馈
+						else
+							li
+								a(href="/response") 在线反馈
+		block content
+		div(width='1002').container
+			div.row#botomrow
+				div.span12(align="right")
+					br
+					p 版权所有&copy;2000-2012 #{companyname} 粤ICP备01113620号 &nbsp;&nbsp;
+					script.
+						var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspanid='cnzz_stat_icon_1000175265'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000175265%26show%3Dpic'type='text/javascript'%3E%3C/script%3E"));
+		//要加载的脚本
+		link(rel="stylesheet",href="/stylesheets/bootstrap.min.css")
+		script(type="text/javascript",src="/javascripts/bootstrap.min.js")

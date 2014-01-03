@@ -1,0 +1,21 @@
+extends header
+block append content
+	div(width='1002').container
+		div.row(align='center')
+			//案例
+			img(alt="960x200",src="/images/ban_contact.jpg",align="center").img-rounded
+			br
+			br
+		div.row
+			div.span2
+				ul.nav.nav-list.bs-docs-sidenav
+					li.nav-header 成功案例
+					-for(var index=0;index<casetypes.length;index++)
+						if casetypes[index].typeid==casetypeid
+							li.active: a(href="/#{tag}/#{casetypes[index].typeid}") #{casetypes[index].typename}
+								i.icon-chevron-right
+						else
+							li: a(href="/#{tag}/#{casetypes[index].typeid}") #{casetypes[index].typename}
+								i.icon-chevron-right
+			div.span9.offset1
+				#{filedata}

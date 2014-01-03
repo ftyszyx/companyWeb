@@ -1,0 +1,41 @@
+extends header
+block append content
+	//在线反馈
+	div(width='1002').container
+		br
+		br
+		if warning
+			div.alert
+				button(type="button",data-dismiss="alert").close &times;
+				strong error! 
+				|#{warning}
+		if sucess
+			div.alert.alert-success #{sucess}
+		div.row(align='left')
+			div.span4
+				legend 在线反馈
+				form(method="POST")
+					div.control-group
+						label.control-label 公司名称
+						div.controls
+							input(type="text",name="companyname")
+					div.control-group
+						label.control-label 姓名
+						div.controls
+							input(type="text",name="name")
+					div.control-group
+						label.control-label 联系电话
+						div.controls
+							input(type="text",name="telepone")
+					div.control-group
+						label.control-label E-Mail
+						div.controls
+							input(type="text",name="e_mail")
+					div.control-group
+						label.control-label 反馈内容
+						div.controls
+							textarea(name="text")
+					div.control-group
+						div.controls
+							button(type='submit').btn提交
+
