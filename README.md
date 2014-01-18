@@ -3,7 +3,7 @@ companyWeb(node.js)
 ##简单介绍
 通过node.js为朋友做了一个公司网页模板，当自己练手
 
-演示站点 [请点这里](http://www.shuangteng.tk)
+演示站点 [请点这里](http://115.28.16.75:4000)
 
 使用的技术：
 
