@@ -5,25 +5,25 @@ block append content
 			//介绍图片(轮换效果)
 			div.carousel.slide#carousel-601179
 				ol.carousel-indicators
-					li.active(data-slide-to="0",data-target="#carousel-601179")
-					li(data-slide-to="1",data-target="#carousel-601179")
-					li(data-slide-to="2",data-target="#carousel-601179")
+					-for(var x=0;x<bannerinfo.length;x++)
+						if(x==0)
+							li.active(data-slide-to="0",data-target="#carousel-601179")
+						else
+							li(data-slide-to="#{x}",data-target="#carousel-601179")
 				div.carousel-inner
-					div.item.active
-						img(alt="第一个案例",src="/images/banner.jpg")
-						div.carousel-caption
-							h4 第一个案例
-							p 介绍一些内容
-					div.item
-						img(alt="第二个案例",src="/images/banner.jpg")
-						div.carousel-caption
-							h4 第二个案例
-							p 介绍一些内容
-					div.item
-						img(alt="第三个案例",src="/images/banner.jpg")
-						div.carousel-caption
-							h4 第三个案例
-							p 介绍一些内容
+					-for(var x=0;x<bannerinfo.length;x++)
+						if(x==0)
+							div.item.active
+								img(alt="#{bannerinfo[x].title}",src="#{bannerinfo[x].bannerpic}")
+								div.carousel-caption
+									h4 #{bannerinfo[x].title}
+									p #{bannerinfo[x].summary}
+						else
+							div.item
+								img(alt="#{bannerinfo[x].title}",src="#{bannerinfo[x].bannerpic}")
+								div.carousel-caption
+									h4 #{bannerinfo[x].title}
+									p #{bannerinfo[x].summary}
 				a(data-slide="prev",href="#carousel-601179").carousel-control.left &lsaquo;
 				a(data-slide="next",href="#carousel-601179").right.carousel-control &rsaquo;
 			br

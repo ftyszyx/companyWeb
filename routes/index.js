@@ -1,4 +1,3 @@
-
 /*
  * GET home page.
  */
@@ -20,6 +19,7 @@ exports.index = function(req, res){
   	companyname:config.info.companyName,
   	companyweb:config.info.website,
   	textarr: config.content ,
+    bannerinfo:config.banners,
   	textrow:textrow,
   	tag:'index'
   });

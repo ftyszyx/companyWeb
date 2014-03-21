@@ -1,14 +1,34 @@
-var config={
+﻿var config={
 
 };
 //一些配置参数
 config.info={
 	"website":"www.shuangteng.net",
 	"mailfrom":"2894383420@qq.com",
-	"mailto":"ftyszyx@sina.com",
+	"mailto":"tengfei8074@126.com",
 	"mailfrompassword":"zaq1XSW2",
-	"companyName":"广州双腾科技有限公司"
+	"companyName":"南宁双腾建筑隔热膜"
 }
+//窗口栏图片
+config.banners=[
+    {
+        "bannerpic":"/images/banner.jpg",
+        "title":"tile1",
+        "summary":"summary"
+    },
+    
+    {
+        "bannerpic":"/images/banner1.jpg",
+        "title":"tile2",
+        "summary":"summary"
+    },
+
+    {
+        "bannerpic":"/images/banner2.jpg",
+        "title":"tile3",
+        "summary":"summary"
+    }
+]
 //首页上显示的文章
 config.content=[
 	{
