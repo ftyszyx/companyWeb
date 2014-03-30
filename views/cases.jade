@@ -1,30 +1,44 @@
-extends header
+extends layout
+block append head
+	link(rel="stylesheet",href="/css/info.css")
+	link(rel="stylesheet",href="/css/bootstrap_nav.css")
+	link(rel="stylesheet",href="/css/bootsrapicon.css")
+	link(rel="stylesheet",href="/css/bootstrap-thumbnail.css")
 block append content
-	div(width='1002').container
-		div.row(align='center')
-			//案例
-			img(alt="960x200",src="/images/ban_contact.jpg",align="center").img-rounded
-			br
-			br
-		div.row
-			div.span2
+	.bannerpic
+		img(src="#{bannerpic}")
+	.main.clearfix
+		.tree.infocontainer
+			.casetitle
+				if tag=='cases'
+					| 工程案例
+				else if tag=='product'
+					| 产品类型
+			.content
 				ul.nav.nav-list.bs-docs-sidenav
-					li.nav-header 成功案例
 					-for(var index=0;index<casetypes.length;index++)
 						if casetypes[index].typeid==casetypeid
-							li.active: a(href="/#{tag}/#{casetypes[index].typeid}") #{casetypes[index].typename}
-								i.icon-chevron-right
+							li.active
+								a(href="/#{tag}/#{casetypes[index].typeid}") 
+									| #{casetypes[index].typename}
+									i.icon-chevron-right
 						else
-							li: a(href="/#{tag}/#{casetypes[index].typeid}") #{casetypes[index].typename}
-								i.icon-chevron-right
-			div.span9.offset1
+							li
+								a(href="/#{tag}/#{casetypes[index].typeid}") 
+									| #{casetypes[index].typename}
+									i.icon-chevron-right
+		.caseinfo
+			if filedata
+				!=filedata
+			else
 				ul.thumbnails
 					-for(var x=0;x<casepost.length;x++)
-						li.span3
-							div.thumbnail
-								img(src="#{casepost[x].postpic}")
-								h4(align='left') #{casepost[x].posttile}
-								if tag=='cases'
-									p(align='right'): a(href="/showcase?typeid=#{casetypeid}&postname=#{casepost[x].posttext}").btn 查看更多 >>
-								else if tag=='product'
-									p(align='right'): a(href="/showproduct?typeid=#{casetypeid}&postname=#{casepost[x].posttext}").btn 查看更多 >>
+						li.sumbnailpic
+							if tag=='cases'
+								a.thumbnail(href='/showcase?typeid=#{casetypeid}&postname=#{casepost[x].posttext}')
+									img(src='#{casepost[x].postpic}')
+									h3 #{casepost[x].posttile}
+							else if tag=='product'
+								a.thumbnail(href='/showproduct?typeid=#{casetypeid}&postname=#{casepost[x].posttext}')
+									img(src='#{casepost[x].postpic}')
+									h3 #{casepost[x].posttile}

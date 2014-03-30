@@ -1,0 +1,79 @@
+doctype html
+html
+	head
+		meta(http-equiv="Content-Type",content="text/html",charset="UTF-8")
+		meta(http-equiv="Content-Language",content="zh-CN")
+		meta(name="title", content="南宁双腾建筑贴膜工程部,主营隔热膜 磨砂膜 防爆膜 装饰膜 隐私膜" )
+		meta(name="keywords" content="双腾,建筑贴膜,隔热膜,磨砂膜,防爆膜,玻璃贴膜,装饰膜,隐私膜" )
+		meta(name="description" content="南宁双腾建筑贴膜工程部,主营隔热膜 磨砂膜 防爆膜 装饰膜 隐私膜,f专业贴膜,值得信赖。")
+		title #{companyname}
+		//css
+		link(rel="Shortcut Icon", href="/img/icon.png")
+		link(rel="stylesheet",href="/css/normalize.css")
+		link(rel="stylesheet",href="/css/layout.css")
+		link(rel="stylesheet",href="/css/bootstrap_table.css")
+		//百度推广按键
+		script(type="text/javascript",data="type=slide&amp;img=4&amp;pos=right&amp;uid=0")#bdshare_js
+		script(type="text/javascript")#bdshell_js
+		script(type="text/javascript").
+			document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+		block head
+	body
+		//qq飘浮
+		div#floaterqq
+			img(src='/img/qq.jpg',width='45',height='141',border='0',usemap='#MAPQQ')
+			map(name="MAPQQ")
+				area(shape='rect',coords="7,43,39,84",href="http://wpa.qq.com/msgrd?v=3&uin=379192283&site=qq&menu=yes")
+				area(shape='rect',coords="7,94,39,134",href="http://wpa.qq.com/msgrd?v=3&uin=491789847&site=qq&menu=yes")
+		.wrapper
+			.header
+			.menu
+				ul
+					li.item
+						if tag=='index'
+							a.active(href="/") 首页
+						else
+							a(href="/") 首页
+					li.divider
+					li.item
+						if tag=='news'
+							a.active(href="/news") 新闻动态
+						else
+							a(href="/news") 新闻动态
+					li.divider
+					li.item
+						if tag=='product'
+							a.active(href="/product") 产品中心
+						else
+							a(href="/product") 产品中心
+					li.divider
+					li.item
+						if tag=='cases'
+							a.active(href="/cases") 工程案例
+						else
+							a(href="/cases") 工程案例
+					li.divider
+					li.item
+						if tag=='knowledges'
+							a.active(href="/knowledges") 知识讲座
+						else
+							a(href="/knowledges") 知识讲座
+					li.divider
+					li.item
+						if tag=='response'
+							a.active(href="/response") 在线反馈
+						else
+							a(href="/response") 在线反馈
+					li.divider
+					li.item
+						if tag=='about'
+							a.active(href="/about") 公司简介
+						else
+							a(href="/about") 公司简介
+					li.divider
+			block content
+			.footer.clearfix
+				p 版权所有: #{companyname} 粤ICP备14009100号-2  
+				script.
+					var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000175265'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1000175265%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+			block footer

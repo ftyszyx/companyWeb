@@ -1,0 +1,152 @@
+//案例数据配置文件
+var cases={
+"bannerpic":"/img/banner.jpg"
+};
+
+//案例类型
+cases.type=[
+	{
+		"typename": "家居住宅",
+		"typeid":"1001"
+	},
+	{
+		"typename":"商铺",
+		"typeid":"1002"
+	},
+	{
+		"typename":"写字楼",
+		"typeid":"1003"
+	},
+	{
+		"typename":"阳光房",
+		"typeid":"1004"
+	},
+	{
+		"typename":"酒店",
+		"typeid":"1005"
+	},
+	{
+		"typename":"厂房",
+		"typeid":"1006"
+	}
+];
+
+
+//案例文章
+cases.post=[
+	{
+		"posttile":"大沙田光明街七巷31号民宅",
+		"typeid":"1001",
+		"postpic":"/img/minzai.jpg",
+		"posttext":"post31.mk"
+	},
+	{
+		"posttile":"仙湖天池山庄",
+		"typeid":"1001",
+		"postpic":"/img/12.jpg",
+		"posttext":"post30.mk"
+	},
+	{
+		"posttile":"南宁普罗旺斯二期",
+		"typeid":"1001",
+		"postpic":"/img/1116.jpg",
+		"posttext":"post29.mk"
+	},
+	{
+		"posttile":"玉洞瑞和家园3栋",
+		"typeid":"1001",
+		"postpic":"/img/z118.jpg",
+		"posttext":"post28.mk"
+	},
+	{
+		"posttile":"凤岭翡翠园一期10栋",
+		"typeid":"1001",
+		"postpic":"/img/1115.jpg",
+		"posttext":"post27.mk"
+	},
+	{
+		"posttile":"凤岭荣和山水美地",
+		"typeid":"1001",
+		"postpic":"/img/1117.jpg",
+		"posttext":"post26.mk"
+	},
+	{
+		"posttile":"仙湖托斯卡纳别墅区37号别墅",
+		"typeid":"1001",
+		"postpic":"/img/bose1.jpg",
+		"posttext":"post25.mk"
+	},
+	{
+		"posttile":"南宁华南城一期商铺",
+		"typeid":"1002",
+		"postpic":"/img/lvse222.jpg",
+		"posttext":"post17.mk"
+	},
+	{
+		"posttile":"南宁经济技术开发区商铺",
+		"typeid":"1002",
+		"postpic":"/img/shuangmianyin.jpg",
+		"posttext":"post18.mk"
+	},
+	{
+		"posttile":"华侨工业园商铺",
+		"typeid":"1002",
+		"postpic":"/img/zda.jpg",
+		"posttext":"post19.mk"
+	},
+	{
+		"posttile":"商业大道10+1商铺",
+		"typeid":"1002",
+		"postpic":"/img/yimeng.jpg",
+		"posttext":"post20.mk"
+	},
+	{
+		"posttile":"北湖北路21号写字楼",
+		"typeid":"1003",
+		"postpic":"/img/mosha2.jpg",
+		"posttext":"post22.mk"
+	},
+	{
+		"posttile":"高新大道5号写字楼",
+		"typeid":"1003",
+		"postpic":"/img/lanseanli.jpg",
+		"posttext":"post23.mk"
+	},
+	{
+		"posttile":"民主路31号写字楼会议室及卫生间",
+		"typeid":"1003",
+		"postpic":"/img/mosha.jpg",
+		"posttext":"post24.mk"
+	},
+	{
+		"posttile":"仙葫环葫三街9号民宅阳光房",
+		"typeid":"1004",
+		"postpic":"/img/yg.jpg",
+		"posttext":"post21.mk"
+	},
+	{
+		"posttile":"某某银行",
+		"typeid":"1005",
+		"postpic":"/img/title3.png",
+		"posttext":"post3.mk"
+	},
+	{
+		"posttile":"某某银行",
+		"typeid":"1005",
+		"postpic":"/img/title3.png",
+		"posttext":"post3.mk"
+	},
+	{
+		"posttile":"某某银行",
+		"typeid":"1005",
+		"postpic":"/img/title3.png",
+		"posttext":"post3.mk"
+	},
+	{
+		"posttile":"南宁高新区厂房",
+		"typeid":"1006",
+		"postpic":"/img/cf.jpg",
+		"posttext":"post16.mk"
+	}
+];
+exports.cases=cases;

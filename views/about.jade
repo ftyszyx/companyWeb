@@ -1,10 +1,8 @@
-extends header
+extends layout
+block append head
+	link(rel="stylesheet",href="/css/about.css")
 block append content
-	div(width='1002').container
-		div.row(align='center')
-			//关于页面
-			img(alt="960x200",src="/images/ban_contact.jpg",align="center").img-rounded
-			br
-			br
-		div.row
-			!=filedata
+	.bannerpic
+		img(src="/img/ban_contact.jpg" width="1002px")
+	.main.clearfix
+		!=filedata

@@ -1,0 +1,22 @@
+
+.main .contact{
+	width: 20%;
+	float: left;
+}
+
+
+.main .news{
+	width: 77%;
+	float: left;
+	margin-left: 1%;
+}
+
+a:hover{
+	color: red;
+
+};
+
+a{
+	display: block;
+	margin-left: 10px;
+}

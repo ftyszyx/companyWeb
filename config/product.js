@@ -1,0 +1,121 @@
+﻿//产品数据配置文件
+var products={
+"bannerpic":"/img/banner.jpg"
+};
+
+//案例类型
+products.type=[
+	{
+		"typename": "高性能隔热膜",
+		"typeid":"1001"
+	},
+	{
+		"typename":"原装进口隔热膜",
+		"typeid":"1002"
+	},
+    {
+		"typename":"磨砂膜",
+		"typeid":"1003"
+	},
+	{
+		"typename":"安全防爆防弹膜",
+		"typeid":"1004"
+	},
+
+];
+
+//产品介绍
+products.post=[
+	{
+		"posttile":"灰银隔热膜",
+		"typeid":"1001",
+		"postpic":"/img/huise.jpg",
+		"posttext":"post8.mk"
+	},
+	{
+		"posttile":"金银隔热膜",
+		"typeid":"1001",
+		"postpic":"/img/jinyin.jpg",
+		"posttext":"post6.mk"
+	},
+	{
+		"posttile":"茶色隔热膜",
+		"typeid":"1001",
+		"postpic":"/img/chase.jpg",
+		"posttext":"post7.mk"
+	},
+	{
+		"posttile":"蓝银隔热膜",
+		"typeid":"1001",
+		"postpic":"/img/lanse.jpg",
+		"posttext":"post1.mk"
+	},
+	{
+		"posttile":"绿银隔热膜",
+		"typeid":"1001",
+		"postpic":"/img/lvse.jpg",
+		"posttext":"post5.mk"
+	},
+	{
+		"posttile":"铂色隔热膜",
+		"typeid":"1001",
+		"postpic":"/img/bose.jpg",
+		"posttext":"post4.mk"
+	},
+	{
+		"posttile":"双面银色隔热膜",
+		"typeid":"1001",
+		"postpic":"/img/shuangyin.jpg",
+		"posttext":"post2.mk"
+	},
+	{
+		"posttile":"美国3M膜",
+		"typeid":"1002",
+		"postpic":"/img/3m.jpg",
+		"posttext":"post3.mk"
+	},
+	{
+		"posttile":"美国龙膜",
+		"typeid":"1002",
+		"postpic":"/img/llumar.jpg",
+		"posttext":"post15.mk"
+	},
+	{
+		"posttile":"美国强生膜",
+		"typeid":"1002",
+		"postpic":"/img/johson.jpg",
+		"posttext":"post9.mk"
+	},
+	{
+		"posttile":"方格磨砂膜",
+		"typeid":"1003",
+		"postpic":"/img/baifangge.jpg",
+		"posttext":"post13.mk"
+	},
+	{
+		"posttile":"条纹磨砂膜",
+		"typeid":"1003",
+		"postpic":"/img/bozhaitiaowen.jpg",
+		"posttext":"post11.mk"
+	},
+	{
+		"posttile":"办公卫生间磨砂膜",
+		"typeid":"1003",
+		"postpic":"/img/mosha.jpg",
+		"posttext":"post10.mk"
+	},
+	{
+		"posttile":"艺术磨砂膜",
+		"typeid":"1003",
+		"postpic":"/img/yishumosha.jpg",
+		"posttext":"post12.mk"
+	},
+	{
+		"posttile":"安全防爆膜",
+		"typeid":"1004",
+		"postpic":"/img/fangbao.jpg",
+		"posttext":"post14.mk"
+	}
+	
+];
+exports.products=products;

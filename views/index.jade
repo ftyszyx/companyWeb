@@ -1,46 +1,101 @@
-extends header
+extends layout
+block append head
+	link(rel="stylesheet",href="css/main.css")
+	link(rel="stylesheet",href="css/bootstrap-carousel.css")
 block append content
-	div(width='1002').container
-		div.row(align='center')
-			//介绍图片(轮换效果)
-			div.carousel.slide#carousel-601179
-				ol.carousel-indicators
-					-for(var x=0;x<bannerinfo.length;x++)
-						if(x==0)
-							li.active(data-slide-to="0",data-target="#carousel-601179")
-						else
-							li(data-slide-to="#{x}",data-target="#carousel-601179")
-				div.carousel-inner
-					-for(var x=0;x<bannerinfo.length;x++)
-						if(x==0)
-							div.item.active
-								img(alt="#{bannerinfo[x].title}",src="#{bannerinfo[x].bannerpic}")
-								div.carousel-caption
-									h4 #{bannerinfo[x].title}
-									p #{bannerinfo[x].summary}
-						else
-							div.item
-								img(alt="#{bannerinfo[x].title}",src="#{bannerinfo[x].bannerpic}")
-								div.carousel-caption
-									h4 #{bannerinfo[x].title}
-									p #{bannerinfo[x].summary}
-				a(data-slide="prev",href="#carousel-601179").carousel-control.left &lsaquo;
-				a(data-slide="next",href="#carousel-601179").right.carousel-control &rsaquo;
-			br
-			br
-			//正文内容
-		div.row(align='center')
-			div.span12
-				ul.thumbnails
-					-for(var x=0;x<textarr.length;x++)
-						li.span4
-							div.thumbnail
-								img(src="#{textarr[x].titlepic}")
-								h4(align='left') #{textarr[x].title}
-								p(align='left') #{textarr[x].summary}
-								p(align='right'): a(href="#{textarr[x].link}").btn 查看更多 >>
+	#myCarousel.carousel.slide
+		// Carousel items
+		.carousel-inner
+			-for(var x=0;x<config.banners.length;x++)
+				if(x==0)
+					div.item.active
+						img(src="#{config.banners[x].bannerpic}")
+				else
+					div.item
+						img(src="#{config.banners[x].bannerpic}")
+		// Carousel nav
+		a.carousel-control.left(href='#myCarousel', data-slide='prev') ‹
+		a.carousel-control.right(href='#myCarousel', data-slide='next') ›
+	.main.clearfix
+		.about.container
+			.title.has-more.clearfix
+				span.title-text 公司简介
+				span.title-arrow
+				a.more(href='/about') 更多>>
+			.content
+				!=config.aboutme
+		.knowledge.container
+			.title.has-more.clearfix
+				span.title-text 知识讲座
+				span.title-arrow
+				a.more(href='/knowledges') 更多>>
+			.content
+				ul
+					-for(var x=0;x<config.knowledges.length;x++)
+						li
+							a(href="#{config.knowledges[x].link}") #{config.knowledges[x].title}
 
+		.news.container
+			.title.has-more.clearfix
+				span.title-text 新闻动态
+				span.title-arrow
+				a.more(href='/news') 更多>>
+			.content
+				ul
+					-for(var x=0;x<config.news.length;x++)
+						li
+							a(href="#{config.news[x].link}") #{config.news[x].title}
+	.product.container.clearfix
+		.title.has-more.clearfix
+			span.title-text 产品展示
+			span.title-arrow
+			a.more(href='/product') 更多>>
+		#proudct_Movie_Box
+			ul#proudct_scroll_container
+				-for(var x=0;x<config.products.length;x++)
+					li
+						a(href="#{config.products[x].link}")
+							img(src="#{config.products[x].pic}")
+						a(href="#{config.products[x].link}") #{config.products[x].title}
+	.cases.container.clearfix
+		.title.has-more.clearfix
+			span.title-text 成功案例
+			span.title-arrow
+			a.more(href='/cases') 更多>>
+		#case_Movie_Box
+			ul#case_scroll_container
+				-for(var x=0;x<config.cases.length;x++)
+					li
+						a(href="#{config.cases[x].link}")
+							img(src="#{config.cases[x].pic}")
+						a(href="#{config.cases[x].link}") #{config.cases[x].title}
+block append footer
+	//要加载的脚本
+	script(type="text/javascript",src="/js/jquery.js")
+	script(type="text/javascript",src="/js/bootstrap-carousel.js")
+	script(type="text/javascript",src="/js/MSClass.js")
 	script.
-		$(document).ready(function(){
-			$('.carousel').carousel({interval:2000});
-		})
+		$('.carousel').carousel({
+			interval: 2000,
+		});
+		var marquee1 = new Marquee(
+		{
+			MSClass	:["proudct_Movie_Box","proudct_scroll_container"],
+			Direction : 2,
+			Step	  : 1,
+			Width	  : 1000,
+			Height	  : 150,
+			Timer	  : 30,
+		});
+		marquee1.Start();
+		var marquee2 = new Marquee(
+		{
+			MSClass	:["case_Movie_Box","case_scroll_container"],
+			Direction : 2,
+			Step	  : 1,
+			Width	  : 1000,
+			Height	  : 150,
+			Timer	  : 30,
+		});
+		marquee2.Start();
+

@@ -1,41 +1,20 @@
-extends header
+extends layout
+block append head
+	link(rel="stylesheet",href="/css/news.css")
 block append content
-	//在线反馈
-	div(width='1002').container
-		br
-		br
-		if warning
-			div.alert
-				button(type="button",data-dismiss="alert").close &times;
-				strong error! 
-				|#{warning}
-		if sucess
-			div.alert.alert-success #{sucess}
-		div.row(align='left')
-			div.span4
-				legend 在线反馈
-				form(method="POST")
-					div.control-group
-						label.control-label 公司名称
-						div.controls
-							input(type="text",name="companyname")
-					div.control-group
-						label.control-label 姓名
-						div.controls
-							input(type="text",name="name")
-					div.control-group
-						label.control-label 联系电话
-						div.controls
-							input(type="text",name="telepone")
-					div.control-group
-						label.control-label E-Mail
-						div.controls
-							input(type="text",name="e_mail")
-					div.control-group
-						label.control-label 反馈内容
-						div.controls
-							textarea(name="text")
-					div.control-group
-						div.controls
-							button(type='submit').btn提交
-
+	.bannerpic
+		img(src="/img/ban_contact.jpg")
+	.main.clearfix
+		.contact.container
+			.title.has-more.clearfix
+				span.title-text 联系我们
+				span.title-arrow
+				a.more(href='/response') 更多>>
+			.content
+				!=contacttext
+		script.
+			var uyan_config = {
+			'du':'shuangteng.net', 
+			};
+		.news.container#uyan_frame
+			script(type="text/javascript",src="http://v2.uyan.cc/code/uyan.js?uid=1885629") 

@@ -1,105 +1,120 @@
 /*
  * GET home page.
  */
-var config=require("../config.js").config;
+var config=require("../config/config.js").config;
+var casevalue=require("../config/case.js").cases;
+var productvalue=require("../config/product.js").products;
+var news=require("../config/news.js").news;
+var knowledges=require("../config/knowledges.js").knowledges;
+
 var fs=require('fs');
 var marked=require('marked');
-var nodemailer=require('nodemailer')
-var casevalue=require("../case.js").cases;
-var productvalue=require("../product.js").products;
+var contacttext="";
+
+fs.readFile('./public/post/contact.mk','utf8',function(err,filedata){
+		if (err) throw err;
+		contacttext=marked(filedata);
+	});
 
 //首页
 exports.index = function(req, res){
-  var textrow=config.content.length/3;
-	if(config.content.length%3>0){
-		textrow++;
-	}
   res.render('index', 
   { 
+  	config:config,
   	companyname:config.info.companyName,
-  	companyweb:config.info.website,
-  	textarr: config.content ,
-    bannerinfo:config.banners,
-  	textrow:textrow,
   	tag:'index'
   });
 };
 
+
+//新闻页面
+exports.news=function(req,res){
+ res.render('news', 
+  { 
+  	news:news,
+  	companyname:config.info.companyName,
+  	contacttext:contacttext,
+  	tag:'news'
+  });
+}
+
+
+//显示新闻页面
+exports.shownews=function(req,res){
+	if (req.method=='GET') {
+		var postname=req.param("postname");
+		if ( postname==null) {
+			res.redirect('/news');
+			return;
+		}
+		else{
+			var postpath="./public/post/"+postname;
+			fs.readFile(postpath,'utf8',function(err,filedata){
+			if (err) {
+				res.redirect('/news');
+				return;
+			}
+			var marktext=marked(filedata);
+			res.render('news',{news:news,companyname:config.info.companyName,tag:'news',contacttext:contacttext,filedata:marktext});	
+			});
+		}
+	};
+}
+
+
+//知识讲座
+exports.knowledges=function(req,res){
+ res.render('knowledges', 
+  { 
+  	knowledges:knowledges,
+  	companyname:config.info.companyName,
+  	contacttext:contacttext,
+  	tag:'knowledges'
+  });
+}
+
+
+//显示知识讲座
+exports.showknowledges=function(req,res){
+	if (req.method=='GET') {
+		var postname=req.param("postname");
+		if ( postname==null) {
+			res.redirect('/knowledges');
+			return;
+		}
+		else{
+			var postpath="./public/post/"+postname;
+			fs.readFile(postpath,'utf8',function(err,filedata){
+			if (err) {
+				res.redirect('/knowledges');
+				return;
+			}
+			var marktext=marked(filedata);
+			res.render('knowledges',{knowledges:knowledges,companyname:config.info.companyName,tag:'knowledges',contacttext:contacttext,filedata:marktext});	
+			});
+		}
+	};
+}
+
 //关于页面
 exports.about=function(req,res){
-	fs.readFile('./public/post/post3.mk','utf8',function(err,filedata){
+	fs.readFile('./public/post/about.mk','utf8',function(err,filedata){
 		if (err) throw err;
 		var marktext=marked(filedata);
-		res.render('about',{companyname:config.info.companyName,
-  	companyweb:config.info.website,tag:'about',filedata:marktext});	
+		res.render('about',{companyname:config.info.companyName,tag:'about',filedata:marktext});	
 	});
 	
 };
 
 //反馈页面
 exports.response=function(req,res){
-
-	if (req.method=='GET') {
-		console.log('get req');
-		res.render('response',{companyname:config.info.companyName,
-  	companyweb:config.info.website,tag:'response'});
-	}else if(req.method=='POST'){
-		console.log('getpost');
-		//检查格式 
-		var name=req.body.name.trim();
-		var companyname=req.body.companyname.trim();
-		var telepone=req.body.telepone.trim();
-		var email=req.body.e_mail.trim();
-		var text=req.body.text.trim();
-
-		if (name==''||companyname==''||text==''||telepone==''||email=='') {
-			res.render('response',{companyname:config.info.companyName,
-  	companyweb:config.info.website,tag:'response',warning:'信息不完整.请重新输入'});
-			return;
-		};
-		//验证格式 
-		var regstring=/^(.+)@(.+)$/;
-		if (email.match(regstring)==null) {
-			res.render('response',{companyname:config.info.companyName,
-  	companyweb:config.info.website,tag:'response',warning:'邮箱地址格式错误.请重新输入'});
-			return;
-		};
-		regstring=/^\d{11}$/;
-		if (telepone.match(regstring)==null) {
-			res.render('response',{companyname:config.info.companyName,
-  	companyweb:config.info.website,tag:'response',warning:'手机号码格式错误.请重新输入'});
-			return;
-		};
-
-		//发送邮件
-		var smtpTransport=nodemailer.createTransport("SMTP",{
-			service:"QQ",
-			auth:{
-				user:config.info.mailfrom,
-				pass:config.info.mailfrompassword
-			}
-		});
-		var mailoptions={
-			from:config.info.mailfrom,
-			to:config.info.mailto,
-			subject:"用户回馈",
-			text:"",
-			html:"\r\nname:"+name+",telephone:"+telepone+",companyname:"+companyname+",email:"+email+",text:"+text
-		}
-		smtpTransport.sendMail(mailoptions,function(err,response){
-			if(err){
-				console.log(err);
-				res.render('response',{companyname:config.info.companyName,
-  	companyweb:config.info.website,tag:'response',sucess:'提交失败，请重试！'});
-			}else{
-				//console.log("message sent:"+response.message);
-				res.render('response',{companyname:config.info.companyName,
-  	companyweb:config.info.website,tag:'response',sucess:'提交成功，我们会尽快回复！'});
-			}
-		});
-		return;
-	}
-}
+	res.render('response', 
+	  { 
+	  	companyname:config.info.companyName,
+	  	contacttext:contacttext,
+	  	tag:'response'
+	  });
+};
 
 //案例
 exports.cases=function(req,res){
@@ -117,8 +132,7 @@ exports.cases=function(req,res){
 				postarr.push(casevalue.post[i]);
 			};
 		};
-		res.render('cases',{companyname:config.info.companyName,
-  	companyweb:config.info.website,tag:'cases',casetypes:casevalue.type,casepost:postarr,casetypeid:typeid});
+		res.render('cases',{bannerpic:casevalue.bannerpic,companyname:config.info.companyName,tag:'cases',casetypes:casevalue.type,casepost:postarr,casetypeid:typeid});
 		return;
 	};
 }
@@ -135,10 +149,12 @@ exports.showcase=function(req,res){
 		else{
 			var postpath="./public/post/"+postname;
 			fs.readFile(postpath,'utf8',function(err,filedata){
-			if (err) throw err;
+			if (err) {
+				res.redirect('/cases');
+				return;
+			}
 			var marktext=marked(filedata);
-			res.render('showcase',{companyname:config.info.companyName,
-  	companyweb:config.info.website,tag:'cases',casetypes:casevalue.type,filedata:marktext,casetypeid:typeid});	
+			res.render('cases',{bannerpic:casevalue.bannerpic,companyname:config.info.companyName,tag:'cases',casetypes:casevalue.type,filedata:marktext,casetypeid:typeid});	
 			});
 		}
 	};
@@ -160,8 +176,7 @@ exports.product=function(req,res){
 				postarr.push(productvalue.post[i]);
 			};
 		};
-		res.render('cases',{companyname:config.info.companyName,
-  	companyweb:config.info.website,tag:'product',casetypes:productvalue.type,casepost:postarr,casetypeid:typeid});
+		res.render('cases',{companyname:config.info.companyName,bannerpic:productvalue.bannerpic,tag:'product',casetypes:productvalue.type,casepost:postarr,casetypeid:typeid});
 		return;
 	};
 }
@@ -177,10 +192,13 @@ exports.showproduct=function(req,res){
 		else{
 			var postpath="./public/post/"+postname;
 			fs.readFile(postpath,'utf8',function(err,filedata){
-			if (err) throw err;
+			if (err) {
+				es.redirect('/product');
+				return;
+			}
 			var marktext=marked(filedata);
-			res.render('showcase',{companyname:config.info.companyName,
-  	companyweb:config.info.website,tag:'product',casetypes:productvalue.type,filedata:marktext,casetypeid:typeid});	
+			res.render('cases',{companyname:config.info.companyName,
+  	bannerpic:productvalue.bannerpic,tag:'product',casetypes:productvalue.type,filedata:marktext,casetypeid:typeid});	
 			});
 		}
 	};

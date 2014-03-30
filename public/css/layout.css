@@ -1,0 +1,179 @@
+/* line 6, ../sass/all.scss */
+html {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* line 11, ../sass/all.scss */
+body {
+  background: #ffffff;
+  color: #606060;
+}
+
+/* line 16, ../sass/all.scss */
+h1, h2, h3, h4, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+/*clearfix开始*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 204, ../sass/main.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 213, ../sass/main.scss */
+.clearfix {
+  *zoom: 1;
+}
+.wrapper{
+	margin: 0 auto;
+	width: 1002px;
+}
+
+/*标题*/
+.header{
+	background-image: url(../img/top.jpg);
+	position: relative;
+	top:0;
+	left:0;
+	width: 1002px;
+	height: 76px;
+	margin-bottom: 10px;
+}
+/*menu 开始*/
+.menu {
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+  background: url(../img/bg-sprite.png) 0 0 repeat-x;
+  height: 39px;
+  line-height: 39px;
+}
+
+.menu > ul > li{
+	float: left;
+  list-style: none; /*取消列表样式*/
+}
+
+.menu >ul >li.divider{
+	background: url(../img/bg-sprite.png) 0 -78px repeat-x;
+	width: 2px;
+	height: 39px;
+}
+
+.menu > ul > li.item >a{
+	background: url(../img/bg-sprite.png) 0 0px  repeat-x;
+	color: #fff;
+	height: 39px;
+	line-height: 39px;
+	display: inline-block;
+	font-weight: bold;
+	width: 140px;
+	text-align: center;
+	text-decoration: none;/*去掉下划线*/
+}
+
+.menu > ul>  li.item >a.active{
+	background: url(../img/bg-sprite.png) 0 -39px repeat-x;
+}
+
+.menu >ul >li.item > a:hover,
+.menu > ul> li.item> a:focus{
+	background: url(../img/bg-sprite.png) 0 -39px repeat-x;
+}
+
+
+
+ .container {
+  border: solid 1px #ccc;
+  padding: 1px;
+  margin-bottom: 10px;
+}
+
+ .container .title {
+  background: url(../img/bg-sprite.png) 0 -149px repeat-x;
+  line-height: 32px;
+  height: 32px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 0 0 16px;
+  color: #fff;
+}
+
+
+/*轮播窗*/
+.banner { position: relative; overflow: auto; }
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+
+/*main*/
+.main{
+	width: 100%;
+}
+
+
+/* line 171, ../sass/all.scss */
+ .container .title.has-more {
+  background: url(../img/bg-sprite.png) 0 -117px repeat-x;
+  padding: 0px;
+}
+/* line 175, ../sass/all.scss */
+.container .title.has-more .title-text {
+  padding-left: 16px;
+  background: url(../img/bg-sprite.png) 0 -149px repeat-x;
+  display: inline-block;
+  line-height: 32px;
+  float: left;
+}
+/* line 182, ../sass/all.scss */
+.container .title.has-more .title-arrow {
+  background: url(../img/icon-sprite.png) -101px 0px repeat-x;
+  display: inline-block;
+  width: 34px;
+  float: left;
+  height: 32px;
+}
+/* line 189, ../sass/all.scss */
+.container .title.has-more .more {
+  float: right;
+  margin-right: 15px;
+  font-size: 12px;
+  color: #c30405;
+  font-weight: normal;
+}
+
+ .container .content {
+  background: #fff;
+  padding: 16px;
+}
+
+#floaterqq {
+VISIBILITY: visible; 
+POSITION: fixed;
+left:10px;
+top:40%;
+}
+
+.footer{
+  background: url("../img/bottom_bg.jpg") repeat-x;
+  width: 100%;
+  height: 79px;
+  text-align: right;
+}
+
+.footer p{
+  margin-top: 8px;
+  font-weight: bold;
+}

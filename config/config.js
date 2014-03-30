@@ -1,0 +1,116 @@
+﻿var config={
+
+};
+//一些配置参数
+config.info={
+	"website":"www.shuangteng.net",
+	"mailfrom":"2894383420@qq.com",
+	"mailto":"tengfei8074@126.com",
+	"mailfrompassword":"zaq1XSW2",
+	"companyName":"南宁双腾建筑隔热膜"
+};
+
+//窗口栏图片
+config.banners=[
+    {
+        "bannerpic":"/img/banner.jpg",
+    },
+    {
+        "bannerpic":"/img/banner1.jpg",
+    },
+
+    {
+        "bannerpic":"/img/banner2.jpg",
+    }
+];
+//公司简介
+config.aboutme="&nbsp;&nbsp;力安玻璃贴膜一直专注建筑玻璃贴膜事业，价格低，品种全,质量保证。包括建筑玻璃贴膜、家居玻璃贴膜、玻璃膜、防爆玻璃膜、隔热玻璃膜、防晒玻璃膜、防弹玻璃膜、太阳膜、装饰玻璃膜、安全玻璃膜、隔音玻璃膜、防紫外线玻璃膜";
+//新闻相关
+config.news=[
+	{
+		"link":"/showcase?typeid=1001&postname=post1.mk",
+		"title":"新闻相关1",
+	},
+	{
+		"link":"/showcase?typeid=1001&postname=post1.mk",
+		"title":"新闻相关1",
+	},
+	{
+		"link":"/showcase?typeid=1001&postname=post1.mk",
+		"title":"新闻相关1",
+	},
+	{
+		"link":"/showcase?typeid=1001&postname=post1.mk",
+		"title":"新闻相关1",
+	},
+];
+
+//知识相关
+config.knowledges=[
+	{
+		"link":"/showcase?typeid=1001&postname=post1.mk",
+		"title":"知识相关1",
+	},
+	{
+		"link":"/showcase?typeid=1001&postname=post1.mk",
+		"title":"知识相关1",
+	},
+	{
+		"link":"/showcase?typeid=1001&postname=post1.mk",
+		"title":"知识相关1",
+	},
+	{
+		"link":"/showcase?typeid=1001&postname=post1.mk",
+		"title":"知识相关1",
+	},
+];
+
+//案例
+config.cases=[
+	{
+		"link":"/showcase?typeid=1001&postname=post1.mk",
+		"title":"知识相关1",
+		"pic":"/img/bose1.jpg",
+	},
+	{
+		"link":"/showcase?typeid=1001&postname=post1.mk",
+		"title":"知识相关1",
+		"pic":"/img/bose1.jpg",
+	},
+	{
+		"link":"/showcase?typeid=1001&postname=post1.mk",
+		"title":"知识相关1",
+		"pic":"/img/bose1.jpg",
+	},
+	{
+		"link":"/showcase?typeid=1001&postname=post1.mk",
+		"title":"知识相关1",
+		"pic":"/img/bose1.jpg",
+	},
+];
+
+//产品
+config.products=[
+	{
+		"link":"/showcase?typeid=1001&postname=post1.mk",
+		"title":"知识相关1",
+		"pic":"/img/bose1.jpg",
+	},
+	{
+		"link":"/showcase?typeid=1001&postname=post1.mk",
+		"title":"知识相关1",
+		"pic":"/img/bose1.jpg",
+	},
+	{
+		"link":"/showcase?typeid=1001&postname=post1.mk",
+		"title":"知识相关1",
+		"pic":"/img/bose1.jpg",
+	},
+	{
+		"link":"/showcase?typeid=1001&postname=post1.mk",
+		"title":"知识相关1",
+		"pic":"/img/bose1.jpg",
+	},
+];
+
+exports.config=config;

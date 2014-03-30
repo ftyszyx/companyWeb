@@ -1,0 +1,25 @@
+extends layout
+block append head
+	link(rel="stylesheet",href="/css/news.css")
+block append content
+	.bannerpic
+		img(src="#{knowledges.bannerpic}")
+	.main.clearfix
+		.contact.container
+			.title.has-more.clearfix
+				span.title-text 联系我们
+				span.title-arrow
+				a.more(href='/response') 更多>>
+			.content
+				!=contacttext
+		.news.container
+			.title.clearfix
+				span.title-text 知识讲座
+			.content
+				if filedata
+					!=filedata
+				else
+					ul
+						-for(var x=0;x<knowledges.post.length;x++)
+							li
+								a(href="/shownews?postname=#{knowledges.post[x].posttext}") #{knowledges.post[x].title}

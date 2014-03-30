@@ -1,0 +1,57 @@
+
+
+.main .about{
+	width: 32%;
+	float: left;
+}
+
+
+.main .knowledge{
+	width: 32%;
+	float: left;
+	margin-left: 1%;
+}
+
+.main .news{
+	width: 32%;
+	float: right;
+	/*margin-left: 1%;*/
+}
+
+
+
+/*产品展示 */
+.product{
+	width: 100%;
+}
+
+/*案例展示 */
+.cases{
+	width: 100%;
+}
+
+#proudct_Movie_Box,#case_Movie_Box{
+  overflow: hidden;
+  width: 1000px;
+  height: 70px;
+  margin: 0 auto;
+  position: relative;
+  background-color:#ffffff;
+}
+
+#proudct_Movie_Box ul li,#case_Movie_Box ul li{
+  list-style: none;
+  margin-right: 20px;
+  float: left; 
+}
+#proudct_Movie_Box ul li a img,#case_Movie_Box ul li a img{
+  width: 150px;
+  height: 120px;
+}
+#proudct_Movie_Box ul li a,#case_Movie_Box ul li a{
+   display:block; 
+   text-align:center;
+    font-size:12px;
+}
+
+
