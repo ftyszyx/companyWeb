@@ -16,4 +16,4 @@ companyWeb(node.js)
  1. 安装node.js
  1. 安装依赖包：`npm install`
  1. 运行： `node app.js`
- 1. 打开浏览器访问: localhost:3000
+ 1. 打开浏览器访问: localhost:4000
