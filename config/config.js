@@ -4,10 +4,7 @@
 //一些配置参数
 config.info={
 	"website":"www.shuangteng.net",
-	"mailfrom":"2894383420@qq.com",
-	"mailto":"tengfei8074@126.com",
-	"mailfrompassword":"zaq1XSW2",
-	"companyName":"南宁双腾建筑隔热膜"
+	"companyName":"南宁双腾建筑玻璃隔热膜"
 };
 
 //窗口栏图片
@@ -24,7 +21,7 @@ config.banners=[
     }
 ];
 //公司简介
-config.aboutme="&nbsp;&nbsp;力安玻璃贴膜一直专注建筑玻璃贴膜事业，价格低，品种全,质量保证。包括建筑玻璃贴膜、家居玻璃贴膜、玻璃膜、防爆玻璃膜、隔热玻璃膜、防晒玻璃膜、防弹玻璃膜、太阳膜、装饰玻璃膜、安全玻璃膜、隔音玻璃膜、防紫外线玻璃膜";
+config.aboutme="&nbsp;&nbsp;南宁双腾建筑玻璃隔热膜成立于2007年6月，是一家集销售、专业施工为一体的建筑节能工程部，在建筑隔热膜行业经营多年，积累丰富的工程经验。业务范围：批发各种品牌隔热膜；承接家居住宅玻璃、酒店、办公写字楼、厂房、阳光房、政府机构等建筑玻璃贴膜工程。工程贴膜热线：18578928868";
 //新闻相关
 config.news=[
 	{
@@ -68,49 +65,119 @@ config.knowledges=[
 //案例
 config.cases=[
 	{
-		"link":"/showcase?typeid=1001&postname=post1.mk",
-		"title":"知识相关1",
+		"link":"/showcase?typeid=1001&postname=post25.mk",
+		"title":"仙湖托斯卡纳别墅区37号别墅",
 		"pic":"/img/bose1.jpg",
 	},
 	{
-		"link":"/showcase?typeid=1001&postname=post1.mk",
-		"title":"知识相关1",
-		"pic":"/img/bose1.jpg",
+		"link":"/showcase?typeid=1001&postname=post26.mk",
+		"title":"凤岭荣和山水美地",
+		"pic":"/img/1117.jpg",
 	},
 	{
-		"link":"/showcase?typeid=1001&postname=post1.mk",
-		"title":"知识相关1",
-		"pic":"/img/bose1.jpg",
+		"link":"/showcase?typeid=1001&postname=post27.mk",
+		"title":"凤岭翡翠园一期10栋",
+		"pic":"/img/1115.jpg",
 	},
 	{
-		"link":"/showcase?typeid=1001&postname=post1.mk",
-		"title":"知识相关1",
-		"pic":"/img/bose1.jpg",
+		"link":"/showcase?typeid=1001&postname=post28.mk",
+		"title":"玉洞瑞和家园3栋",
+		"pic":"/img/z118.jpg",
 	},
+	{
+		"link":"/showcase?typeid=1001&postname=post29.mk",
+		"title":"南宁普罗旺斯二期",
+		"pic":"/img/1116.jpg",
+	},
+	{
+		"link":"/showcase?typeid=1002&postname=post18.mk",
+		"title":"南宁经济技术开发区商铺",
+		"pic":"/img/shuangmianyin.jpg",
+	},
+	{
+		"link":"/showcase?typeid=1002&postname=post17.mk",
+		"title":"南宁华南城一期商铺",
+		"pic":"/img/lvse222.jpg",
+	},
+	{
+		"link":"/showcase?typeid=1003&postname=post23.mk",
+		"title":"高新大道5号写字楼",
+		"pic":"/img/lanseanli.jpg",
+	},
+	{
+		"link":"/showcase?typeid=1003&postname=post24.mk",
+		"title":"民主路31号写字楼会议室及卫生间",
+		"pic":"/img/mosha.jpg",
+	}
 ];
 
 //产品
 config.products=[
 	{
-		"link":"/showcase?typeid=1001&postname=post1.mk",
-		"title":"知识相关1",
-		"pic":"/img/bose1.jpg",
+		"link":"/showproduct?typeid=1001&postname=post2.mk",
+		"title":"双面银色隔热膜",
+		"pic":"/img/shuangyin.jpg",
 	},
 	{
-		"link":"/showcase?typeid=1001&postname=post1.mk",
-		"title":"知识相关1",
-		"pic":"/img/bose1.jpg",
+		"link":"/showproduct?typeid=1001&postname=post4.mk",
+		"title":"铂色隔热膜",
+		"pic":"/img/bose.jpg",
 	},
 	{
-		"link":"/showcase?typeid=1001&postname=post1.mk",
-		"title":"知识相关1",
-		"pic":"/img/bose1.jpg",
+		"link":"/showproduct?typeid=1001&postname=post5.mk",
+		"title":"绿银隔热膜",
+		"pic":"/img/lvse.jpg",
 	},
 	{
-		"link":"/showcase?typeid=1001&postname=post1.mk",
-		"title":"知识相关1",
-		"pic":"/img/bose1.jpg",
+		"link":"/showproduct?typeid=1001&postname=post1.mk",
+		"title":"蓝银隔热膜",
+		"pic":"/img/lanse.jpg",
 	},
+	{
+		"link":"/showproduct?typeid=1001&postname=post7.mk",
+		"title":"茶色隔热膜",
+		"pic":"/img/chase.jpg",
+	},
+	{
+		"link":"/showproduct?typeid=1001&postname=post6.mk",
+		"title":"金银隔热膜",
+		"pic":"/img/jinyin.jpg",
+	},
+	{
+		"link":"/showproduct?typeid=1001&postname=post8.mk",
+		"title":"灰银隔热膜",
+		"pic":"/img/huise.jpg",
+	},
+	{
+		"link":"/showproduct?typeid=1002&postname=post3.mk",
+		"title":"美国3M膜",
+		"pic":"/img/3m.jpg",
+	},
+	{
+		"link":"/showproduct?typeid=1002&postname=post15.mk",
+		"title":"美国龙膜",
+		"pic":"/img/llumar.jpg",
+	},
+	{
+		"link":"/showproduct?typeid=1002&postname=post9.mk",
+		"title":"美国强生膜",
+		"pic":"/img/johson.jpg",
+	},
+	{
+		"link":"/showproduct?typeid=1003&postname=post12.mk",
+		"title":"艺术磨砂膜",
+		"pic":"/img/yishumosha.jpg",
+	},
+	{
+		"link":"/showproduct?typeid=1003&postname=post10.mk",
+		"title":"办公卫生间磨砂膜",
+		"pic":"/img/mosha.jpg",
+	},
+	{
+		"link":"/showproduct?typeid=1004&postname=post14.mk",
+		"title":"安全防爆膜",
+		"pic":"/img/fangbao.jpg",
+	}
 ];
 
 exports.config=config;
