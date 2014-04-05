@@ -18,8 +18,14 @@ block append content
 			.content
 				if filedata
 					!=filedata
+					div#uyan_frame
 				else
 					ul
 						-for(var x=0;x<knowledges.post.length;x++)
 							li
-								a(href="/shownews?postname=#{knowledges.post[x].posttext}") #{knowledges.post[x].title}
+								a(href="/shownknowledges?postname=#{knowledges.post[x].posttext}") #{knowledges.post[x].title}
+				script(type="text/javascript",src="http://v2.uyan.cc/code/uyan.js?uid=1885629")				
+	script.
+		var uyan_config = {
+		'du':'shuangteng.net', 
+		};

@@ -17,6 +17,10 @@ config.banners=[
     },
 
     {
+        "bannerpic":"/img/banner6.jpg",
+    },
+
+    {
         "bannerpic":"/img/banner2.jpg",
     }
 ];
@@ -45,20 +49,20 @@ config.news=[
 //知识相关
 config.knowledges=[
 	{
-		"link":"/showcase?typeid=1001&postname=post1.mk",
-		"title":"知识相关1",
+		"link":"/shownknowledges?postname=post32.mk",
+		"title":"隔热膜介绍",
 	},
 	{
-		"link":"/showcase?typeid=1001&postname=post1.mk",
-		"title":"知识相关1",
+		"link":"/shownknowledges?postname=post33.mk",
+		"title":"选择隔热膜时需重点关注的指标",
 	},
 	{
-		"link":"/showcase?typeid=1001&postname=post1.mk",
-		"title":"知识相关1",
+		"link":"/shownknowledges?postname=post34.mk",
+		"title":"教你分辨真假玻璃贴膜的8个方法",
 	},
 	{
-		"link":"/showcase?typeid=1001&postname=post1.mk",
-		"title":"知识相关1",
+		"link":"/shownknowledges?postname=post35.mk",
+		"title":"家里有空调和窗帘还需要贴隔热膜吗？",
 	},
 ];
 
