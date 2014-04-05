@@ -193,7 +193,7 @@ exports.showproduct=function(req,res){
 			var postpath="./public/post/"+postname;
 			fs.readFile(postpath,'utf8',function(err,filedata){
 			if (err) {
-				es.redirect('/product');
+				res.redirect('/product');
 				return;
 			}
 			var marktext=marked(filedata);
