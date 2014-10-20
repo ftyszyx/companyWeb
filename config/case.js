@@ -77,6 +77,30 @@ cases.post=[
 		"posttext":"post25.mk"
 	},
 	{
+		"posttile":"沙井大道融晟公园大地A13栋",
+		"typeid":"1001",
+		"postpic":"/img/gongyuan.jpg",
+		"posttext":"post50.mk"
+	},
+	{
+		"posttile":"普罗旺斯紫罗兰庄园",
+		"typeid":"1001",
+		"postpic":"/img/plws.jpg",
+		"posttext":"post51.mk"
+	},
+	{
+		"posttile":"锦江小区",
+		"typeid":"1001",
+		"postpic":"/img/jinjiang.jpg",
+		"posttext":"post54.mk"
+	},
+	{
+		"posttile":"凤岭山语城",
+		"typeid":"1001",
+		"postpic":"/img/shanyu.jpg",
+		"posttext":"post59.mk"
+	},
+	{
 		"posttile":"南宁华南城一期商铺",
 		"typeid":"1002",
 		"postpic":"/img/lvse222.jpg",
@@ -99,6 +123,18 @@ cases.post=[
 		"typeid":"1002",
 		"postpic":"/img/yimeng.jpg",
 		"posttext":"post20.mk"
+	},
+	{
+		"posttile":"东盟汽配城桂正钢圈商铺",
+		"typeid":"1002",
+		"postpic":"/img/qipei.jpg",
+		"posttext":"post55.mk"
+	},
+	{
+		"posttile":"万象城大洋世纪",
+		"typeid":"1003",
+		"postpic":"/img/dayang.jpg",
+		"posttext":"post61.mk"
 	},
 	{
 		"posttile":"北湖北路21号写字楼",
@@ -125,28 +161,28 @@ cases.post=[
 		"posttext":"post21.mk"
 	},
 	{
-		"posttile":"某某银行",
-		"typeid":"1005",
-		"postpic":"/img/title3.png",
-		"posttext":"post3.mk"
+		"posttile":"仙湖龙胤花园青云路",
+		"typeid":"1004",
+		"postpic":"/img/ly.jpg",
+		"posttext":"post52.mk"
 	},
 	{
-		"posttile":"某某银行",
+		"posttile":"华南城川会宾馆",
 		"typeid":"1005",
-		"postpic":"/img/title3.png",
-		"posttext":"post3.mk"
-	},
-	{
-		"posttile":"某某银行",
-		"typeid":"1005",
-		"postpic":"/img/title3.png",
-		"posttext":"post3.mk"
+		"postpic":"/img/chuanhui.jpg",
+		"posttext":"post53.mk"
 	},
 	{
 		"posttile":"南宁高新区厂房",
 		"typeid":"1006",
 		"postpic":"/img/cf.jpg",
 		"posttext":"post16.mk"
+	},
+	{
+		"posttile":"富士康员工活动中心",
+		"typeid":"1006",
+		"postpic":"/img/fushi.jpg",
+		"posttext":"post56.mk"
 	}
 ];
 exports.cases=cases;

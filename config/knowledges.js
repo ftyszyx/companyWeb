@@ -1,4 +1,4 @@
-
+﻿
 //知识相关
 var knowledges={
 	"bannerpic":"/img/banner.jpg"
@@ -6,6 +6,26 @@ var knowledges={
 
 //案例文章
 knowledges.post=[
+    {
+		"title":"隔热膜让家居生活更私密",
+		"posttext":"post60.mk"
+	},
+    {
+		"title":"未来节能减排新方式--建筑玻璃贴膜",
+		"posttext":"post58.mk"
+	},
+	{
+		"title":"没有沙粒的贴膜技术",
+		"posttext":"post57.mk"
+	},
+	{
+		"title":"隔热膜隔热原理简单介绍",
+		"posttext":"post47.mk"
+	},
+	{
+		"title":"本公司在贴膜过程中的两个实用经验！",
+		"posttext":"post46.mk"
+	},
 	{
 		"title":"隔热膜介绍",
 		"posttext":"post32.mk"
@@ -29,6 +49,10 @@ knowledges.post=[
 	{
 		"title":"建筑玻璃贴膜的常见问题",
 		"posttext":"post37.mk"
+	},
+	{
+		"title":"汽车膜与建筑膜的区别",
+		"posttext":"post44.mk"
 	},
 ];
 exports.knowledges=knowledges;

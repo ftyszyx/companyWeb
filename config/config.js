@@ -4,7 +4,7 @@
 //一些配置参数
 config.info={
 	"website":"www.shuangteng.net",
-	"companyName":"南宁双腾建筑玻璃隔热膜"
+	"companyName":"南宁双腾建筑隔热膜贴膜有限公司"
 };
 
 //窗口栏图片
@@ -25,29 +25,61 @@ config.banners=[
     }
 ];
 //公司简介
-config.aboutme="&nbsp;&nbsp;南宁双腾建筑玻璃隔热膜成立于2007年6月，是一家集销售、专业施工为一体的建筑节能工程部，在建筑隔热膜行业经营多年，积累丰富的工程经验。业务范围：批发各种品牌隔热膜；承接家居住宅玻璃、酒店、办公写字楼、厂房、阳光房、政府机构等建筑玻璃贴膜工程。工程贴膜热线：18578928868";
+config.aboutme="&nbsp;&nbsp;南宁双腾建筑玻璃隔热膜成立于2007年6月，是一家集销售、专业施工为一体的建筑节能工程部，在建筑隔热膜行业经营多年，积累丰富的工程经验。业务范围：批发各种品牌隔热膜；承接家居住宅玻璃、酒店、办公写字楼、厂房、阳光房、政府机构等建筑玻璃贴膜工程。工程贴膜热线：0771-6719820或18578928868";
 //新闻相关
 config.news=[
 	{
-		"link":"/showcase?typeid=1001&postname=post1.mk",
-		"title":"新闻相关1",
+		"link":"/shownews?postname=post45.mk",
+		"title":"双腾品牌推广活动隔热膜仅要128元/m²”",
 	},
 	{
-		"link":"/showcase?typeid=1001&postname=post1.mk",
-		"title":"新闻相关1",
+		"link":"/shownews?postname=post38.mk",
+		"title":"双腾居家窗膜 给窗户戴上“太阳镜”",
 	},
 	{
-		"link":"/showcase?typeid=1001&postname=post1.mk",
-		"title":"新闻相关1",
+		"link":"/shownews?postname=post39.mk",
+		"title":"﻿贴建筑节能膜 家里空调至少省电30%",
 	},
 	{
-		"link":"/showcase?typeid=1001&postname=post1.mk",
-		"title":"新闻相关1",
+		"link":"/shownews?postname=post40.mk",
+		"title":"双腾高性能隔热膜长期可靠性试验已经7年！！",
+	},
+	{
+		"link":"/shownews?postname=post41.mk",
+		"title":"春季装修——玻璃贴膜举足轻重",
+	},
+	{
+		"link":"/shownews?postname=post42.mk",
+		"title":"玻璃未贴膜 或致死人命——玻璃自爆及防范方法",
+	},
+	{
+		"link":"/shownews?postname=post43.mk",
+		"title":"节能--中国建筑工程竣工验收强制性标准介绍",
 	},
 ];
 
 //知识相关
 config.knowledges=[
+    {
+		"link":"/shownknowledges?postname=post60.mk",
+		"title":"隔热膜让家居生活更私密",
+	},
+    {
+		"link":"/shownknowledges?postname=post58.mk",
+		"title":"未来节能减排新方式--建筑玻璃贴膜",
+	},
+	{
+		"link":"/shownknowledges?postname=post57.mk",
+		"title":"没有沙粒的贴膜技术",
+	},
+	{
+		"link":"/shownknowledges?postname=post47.mk",
+		"title":"隔热膜隔热原理简单介绍",
+	},
+	{
+		"link":"/shownknowledges?postname=post46.mk",
+		"title":"本公司在贴膜过程中的两个实用经验",
+	},
 	{
 		"link":"/shownknowledges?postname=post32.mk",
 		"title":"隔热膜介绍",
@@ -59,10 +91,6 @@ config.knowledges=[
 	{
 		"link":"/shownknowledges?postname=post34.mk",
 		"title":"教你分辨真假玻璃贴膜的8个方法",
-	},
-	{
-		"link":"/shownknowledges?postname=post35.mk",
-		"title":"家里有空调和窗帘还需要贴隔热膜吗？",
 	},
 ];
 

@@ -6,7 +6,7 @@ var products={
 //案例类型
 products.type=[
 	{
-		"typename": "高性能隔热膜",
+		"typename": "正奥隔热膜",
 		"typeid":"1001"
 	},
 	{
