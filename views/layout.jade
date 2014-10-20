@@ -60,6 +60,12 @@ html
 							a(href="/knowledges") 知识讲座
 					li.divider
 					li.item
+						if tag=='taobao'
+							a.active(href="www.taobao.com") 淘宝链接
+						else
+							a(href="www.taobao.com") 淘宝链接
+					li.divider
+					li.item
 						if tag=='response'
 							a.active(href="/response") 在线反馈
 						else
