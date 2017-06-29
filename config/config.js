@@ -30,7 +30,7 @@ config.aboutme="&nbsp;&nbsp;南宁市白沙大道109号龙光普罗旺斯二期�
 config.news=[
 	{
 		"link":"/shownews?postname=post45.mk",
-		"title":"双腾品牌推广活动隔热膜仅要128元/m²”",
+		"title":"安斯通品牌推广活动隔热膜仅要128元/m²”",
 	}
 ];
 

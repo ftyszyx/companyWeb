@@ -6,11 +6,11 @@ var news={
 //案例文章
 news.post=[
 	{
-		"title":"双腾品牌推广活动隔热膜仅要128元/m²”",
+		"title":"安斯通品牌推广活动隔热膜仅要128元/m²”",
 		"posttext":"post45.mk"
 	},
 	{
-		"title":"双腾居家窗膜 给窗户戴上“太阳镜”",
+		"title":"安斯通居家窗膜 给窗户戴上“太阳镜”",
 		"posttext":"post38.mk"
 	},
 	{
@@ -18,7 +18,7 @@ news.post=[
 		"posttext":"post39.mk"
 	},
 	{
-		"title":"双腾高性能隔热膜长期可靠性试验已经7年！！",
+		"title":"安斯通高性能隔热膜长期可靠性试验已经7年！！",
 		"posttext":"post40.mk"
 	},
 	{
