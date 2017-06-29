@@ -3,8 +3,8 @@
 };
 //一些配置参数
 config.info={
-	"website":"www.shuangteng.net",
-	"companyName":"南宁双腾建筑隔热膜贴膜有限公司"
+	"website":"www.ansitong.com",
+	"companyName":"广西安斯通贸易有限公司"
 };
 
 //窗口栏图片
@@ -25,37 +25,13 @@ config.banners=[
     }
 ];
 //公司简介
-config.aboutme="&nbsp;&nbsp;南宁双腾建筑玻璃隔热膜成立于2007年6月，是一家集销售、专业施工为一体的建筑节能工程部，在建筑隔热膜行业经营多年，积累丰富的工程经验。业务范围：批发各种品牌隔热膜；承接家居住宅玻璃、酒店、办公写字楼、厂房、阳光房、政府机构等建筑玻璃贴膜工程。工程贴膜热线：0771-6719820或18578928868";
+config.aboutme="&nbsp;&nbsp;南宁市白沙大道109号龙光普罗旺斯二期香槟庄园6号楼5单元5-0901号";
 //新闻相关
 config.news=[
 	{
 		"link":"/shownews?postname=post45.mk",
 		"title":"双腾品牌推广活动隔热膜仅要128元/m²”",
-	},
-	{
-		"link":"/shownews?postname=post38.mk",
-		"title":"双腾居家窗膜 给窗户戴上“太阳镜”",
-	},
-	{
-		"link":"/shownews?postname=post39.mk",
-		"title":"﻿贴建筑节能膜 家里空调至少省电30%",
-	},
-	{
-		"link":"/shownews?postname=post40.mk",
-		"title":"双腾高性能隔热膜长期可靠性试验已经7年！！",
-	},
-	{
-		"link":"/shownews?postname=post41.mk",
-		"title":"春季装修——玻璃贴膜举足轻重",
-	},
-	{
-		"link":"/shownews?postname=post42.mk",
-		"title":"玻璃未贴膜 或致死人命——玻璃自爆及防范方法",
-	},
-	{
-		"link":"/shownews?postname=post43.mk",
-		"title":"节能--中国建筑工程竣工验收强制性标准介绍",
-	},
+	}
 ];
 
 //知识相关
@@ -63,35 +39,7 @@ config.knowledges=[
     {
 		"link":"/shownknowledges?postname=post60.mk",
 		"title":"隔热膜让家居生活更私密",
-	},
-    {
-		"link":"/shownknowledges?postname=post58.mk",
-		"title":"未来节能减排新方式--建筑玻璃贴膜",
-	},
-	{
-		"link":"/shownknowledges?postname=post57.mk",
-		"title":"没有沙粒的贴膜技术",
-	},
-	{
-		"link":"/shownknowledges?postname=post47.mk",
-		"title":"隔热膜隔热原理简单介绍",
-	},
-	{
-		"link":"/shownknowledges?postname=post46.mk",
-		"title":"本公司在贴膜过程中的两个实用经验",
-	},
-	{
-		"link":"/shownknowledges?postname=post32.mk",
-		"title":"隔热膜介绍",
-	},
-	{
-		"link":"/shownknowledges?postname=post33.mk",
-		"title":"选择隔热膜时需重点关注的指标",
-	},
-	{
-		"link":"/shownknowledges?postname=post34.mk",
-		"title":"教你分辨真假玻璃贴膜的8个方法",
-	},
+	}
 ];
 
 //案例
@@ -100,46 +48,6 @@ config.cases=[
 		"link":"/showcase?typeid=1001&postname=post25.mk",
 		"title":"仙湖托斯卡纳别墅区37号别墅",
 		"pic":"/img/bose1.jpg",
-	},
-	{
-		"link":"/showcase?typeid=1001&postname=post26.mk",
-		"title":"凤岭荣和山水美地",
-		"pic":"/img/1117.jpg",
-	},
-	{
-		"link":"/showcase?typeid=1001&postname=post27.mk",
-		"title":"凤岭翡翠园一期10栋",
-		"pic":"/img/1115.jpg",
-	},
-	{
-		"link":"/showcase?typeid=1001&postname=post28.mk",
-		"title":"玉洞瑞和家园3栋",
-		"pic":"/img/z118.jpg",
-	},
-	{
-		"link":"/showcase?typeid=1001&postname=post29.mk",
-		"title":"南宁普罗旺斯二期",
-		"pic":"/img/1116.jpg",
-	},
-	{
-		"link":"/showcase?typeid=1002&postname=post18.mk",
-		"title":"南宁经济技术开发区商铺",
-		"pic":"/img/shuangmianyin.jpg",
-	},
-	{
-		"link":"/showcase?typeid=1002&postname=post17.mk",
-		"title":"南宁华南城一期商铺",
-		"pic":"/img/lvse222.jpg",
-	},
-	{
-		"link":"/showcase?typeid=1003&postname=post23.mk",
-		"title":"高新大道5号写字楼",
-		"pic":"/img/lanseanli.jpg",
-	},
-	{
-		"link":"/showcase?typeid=1003&postname=post24.mk",
-		"title":"民主路31号写字楼会议室及卫生间",
-		"pic":"/img/mosha.jpg",
 	}
 ];
 
@@ -149,66 +57,6 @@ config.products=[
 		"link":"/showproduct?typeid=1001&postname=post2.mk",
 		"title":"双面银色隔热膜",
 		"pic":"/img/shuangyin.jpg",
-	},
-	{
-		"link":"/showproduct?typeid=1001&postname=post4.mk",
-		"title":"铂色隔热膜",
-		"pic":"/img/bose.jpg",
-	},
-	{
-		"link":"/showproduct?typeid=1001&postname=post5.mk",
-		"title":"绿银隔热膜",
-		"pic":"/img/lvse.jpg",
-	},
-	{
-		"link":"/showproduct?typeid=1001&postname=post1.mk",
-		"title":"蓝银隔热膜",
-		"pic":"/img/lanse.jpg",
-	},
-	{
-		"link":"/showproduct?typeid=1001&postname=post7.mk",
-		"title":"茶色隔热膜",
-		"pic":"/img/chase.jpg",
-	},
-	{
-		"link":"/showproduct?typeid=1001&postname=post6.mk",
-		"title":"金银隔热膜",
-		"pic":"/img/jinyin.jpg",
-	},
-	{
-		"link":"/showproduct?typeid=1001&postname=post8.mk",
-		"title":"灰银隔热膜",
-		"pic":"/img/huise.jpg",
-	},
-	{
-		"link":"/showproduct?typeid=1002&postname=post3.mk",
-		"title":"美国3M膜",
-		"pic":"/img/3m.jpg",
-	},
-	{
-		"link":"/showproduct?typeid=1002&postname=post15.mk",
-		"title":"美国龙膜",
-		"pic":"/img/llumar.jpg",
-	},
-	{
-		"link":"/showproduct?typeid=1002&postname=post9.mk",
-		"title":"美国强生膜",
-		"pic":"/img/johson.jpg",
-	},
-	{
-		"link":"/showproduct?typeid=1003&postname=post12.mk",
-		"title":"艺术磨砂膜",
-		"pic":"/img/yishumosha.jpg",
-	},
-	{
-		"link":"/showproduct?typeid=1003&postname=post10.mk",
-		"title":"办公卫生间磨砂膜",
-		"pic":"/img/mosha.jpg",
-	},
-	{
-		"link":"/showproduct?typeid=1004&postname=post14.mk",
-		"title":"安全防爆膜",
-		"pic":"/img/fangbao.jpg",
 	}
 ];
 
