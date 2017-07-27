@@ -7,7 +7,7 @@ var productvalue=require("../config/product.js").products;
 var news=require("../config/news.js").news;
 var knowledges=require("../config/knowledges.js").knowledges;
 
-var config=require("../config/config.js")
+var config=require("../config/config.js").config
 var fs=require('fs');
 var marked=require('marked');
 var contacttext="";

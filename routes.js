@@ -1,6 +1,6 @@
 //成
 var pageindex=require('./routes/index.js');
-var config=require("./config/config.js")
+var config=require("./config/config.js").config
 var subpath=config.subpath;
 module.exports=function(app){
 	app.get('/',pageindex.index);//首页
