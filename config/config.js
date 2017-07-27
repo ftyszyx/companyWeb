@@ -1,5 +1,6 @@
 ﻿var config={
-
+	"publicpath":"/home/zyx/shop/dist/admin",
+	"subpath":"/company"
 };
 //一些配置参数
 config.info={

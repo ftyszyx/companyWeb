@@ -7,8 +7,11 @@ var express = require('express');
 var routes = require('./routes');
 var http = require('http');
 var path = require('path');
-
+var config=require("config/config.js")
 var app = express();
+
+
+var publicpath="/home/zyx/shop/dist/admin"
 
 // all environments
 app.set('port', process.env.PORT || 4000);
@@ -19,7 +22,7 @@ app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(config.publicpath));
 
 // development only
 if ('development' == app.get('env')) {

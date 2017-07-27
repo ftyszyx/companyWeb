@@ -7,11 +7,12 @@ var productvalue=require("../config/product.js").products;
 var news=require("../config/news.js").news;
 var knowledges=require("../config/knowledges.js").knowledges;
 
+var config=require("../config/config.js")
 var fs=require('fs');
 var marked=require('marked');
 var contacttext="";
-
-fs.readFile('./public/post/contact.mk','utf8',function(err,filedata){
+var publicpath=config.publicpath
+fs.readFile(publicpath+'/post/contact.mk','utf8',function(err,filedata){
 		if (err) throw err;
 		contacttext=marked(filedata);
 	});
@@ -48,7 +49,7 @@ exports.shownews=function(req,res){
 			return;
 		}
 		else{
-			var postpath="./public/post/"+postname;
+			var postpath=publicpath+"/post/"+postname;
 			fs.readFile(postpath,'utf8',function(err,filedata){
 			if (err) {
 				res.redirect('/news');
@@ -83,7 +84,7 @@ exports.showknowledges=function(req,res){
 			return;
 		}
 		else{
-			var postpath="./public/post/"+postname;
+			var postpath=publicpath+"/post/"+postname;
 			fs.readFile(postpath,'utf8',function(err,filedata){
 			if (err) {
 				res.redirect('/knowledges');
@@ -98,7 +99,7 @@ exports.showknowledges=function(req,res){
 
 //关于页面
 exports.about=function(req,res){
-	fs.readFile('./public/post/about.mk','utf8',function(err,filedata){
+	fs.readFile(publicpath+'/post/about.mk','utf8',function(err,filedata){
 		if (err) throw err;
 		var marktext=marked(filedata);
 		res.render('about',{companyname:config.info.companyName,tag:'about',filedata:marktext});	
@@ -147,7 +148,7 @@ exports.showcase=function(req,res){
 			return;
 		}
 		else{
-			var postpath="./public/post/"+postname;
+			var postpath=publicpath+"/post/"+postname;
 			fs.readFile(postpath,'utf8',function(err,filedata){
 			if (err) {
 				res.redirect('/cases');
@@ -190,7 +191,7 @@ exports.showproduct=function(req,res){
 			return;
 		}
 		else{
-			var postpath="./public/post/"+postname;
+			var postpath=publicpath+"/post/"+postname;
 			fs.readFile(postpath,'utf8',function(err,filedata){
 			if (err) {
 				res.redirect('/product');
