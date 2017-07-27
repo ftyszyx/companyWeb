@@ -31,33 +31,33 @@ html
 				ul
 					li.item
 						if tag=='index'
-							a.active(href="/") 首页
+							a.active(href="/company") 首页
 						else
-							a(href="/") 首页
+							a(href="/company/") 首页
 					li.divider
 					li.item
 						if tag=='news'
-							a.active(href="/news") 新闻动态
+							a.active(href="/company/news") 新闻动态
 						else
-							a(href="/news") 新闻动态
+							a(href="/company/news") 新闻动态
 					li.divider
 					li.item
 						if tag=='product'
-							a.active(href="/product") 产品中心
+							a.active(href="/company/product") 产品中心
 						else
-							a(href="/product") 产品中心
+							a(href="/company/product") 产品中心
 					li.divider
 					li.item
 						if tag=='cases'
-							a.active(href="/cases") 工程案例
+							a.active(href="/company/cases") 工程案例
 						else
-							a(href="/cases") 工程案例
+							a(href="/company/cases") 工程案例
 					li.divider
 					li.item
 						if tag=='knowledges'
-							a.active(href="/knowledges") 知识讲座
+							a.active(href="/company/knowledges") 知识讲座
 						else
-							a(href="/knowledges") 知识讲座
+							a(href="/company/knowledges") 知识讲座
 					li.divider
 					//li.item
 						//if tag=='taobao'
@@ -67,19 +67,19 @@ html
 					li.divider
 					li.item
 						if tag=='response'
-							a.active(href="/response") 在线反馈
+							a.active(href="/company/response") 在线反馈
 						else
-							a(href="/response") 在线反馈
+							a(href="/company/response") 在线反馈
 					li.divider
 					li.item
 						if tag=='about'
-							a.active(href="/about") 公司简介
+							a.active(href="/company/about") 公司简介
 						else
-							a(href="/about") 公司简介
+							a(href="/company/about") 公司简介
 					li.divider
 			block content
 			.footer.clearfix
-				//p 版权所有: #{companyname} 粤ICP备14009100号-2  
+				//p 版权所有: #{companyname} 桂ICP备17006910号-1
 				p 版权所有: #{companyname}
 				script.
 					var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000175265'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1000175265%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));

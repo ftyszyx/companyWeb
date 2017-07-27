@@ -21,14 +21,14 @@ block append content
 			.title.has-more.clearfix
 				span.title-text 公司简介
 				span.title-arrow
-				a.more(href='/about') 更多>>
+				a.more(href='/company/about') 更多>>
 			.content
 				!=config.aboutme
 		.knowledge.container
 			.title.has-more.clearfix
 				span.title-text 知识讲座
 				span.title-arrow
-				a.more(href='/knowledges') 更多>>
+				a.more(href='/company/knowledges') 更多>>
 			.content
 				ul
 					-for(var x=0;x<config.knowledges.length;x++)
@@ -39,7 +39,7 @@ block append content
 			.title.has-more.clearfix
 				span.title-text 新闻动态
 				span.title-arrow
-				a.more(href='/news') 更多>>
+				a.more(href='/company/news') 更多>>
 			.content
 				ul
 					-for(var x=0;x<config.news.length;x++)
@@ -61,7 +61,7 @@ block append content
 		.title.has-more.clearfix
 			span.title-text 成功案例
 			span.title-arrow
-			a.more(href='/cases') 更多>>
+			a.more(href='/company/cases') 更多>>
 		#case_Movie_Box
 			ul#case_scroll_container
 				-for(var x=0;x<config.cases.length;x++)
