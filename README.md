@@ -3,8 +3,6 @@ companyWeb(node.js)
 ##简单介绍
 通过node.js为朋友做了一个公司网页模板，当自己练手
 
-演示站点 [请点这里](http://www.shuangteng.net)
-
 使用的技术：
 
  - node.js 
@@ -34,4 +32,3 @@ companyWeb(node.js)
  ##结束
  做的比较简陋，纯静态页面，水平不足处请指出，给我一个提高的机会,谢谢。
  
- 有什么想交流的请联系我：whyzi@qq.com
